@@ -46,6 +46,12 @@ and return it to the UI like below. */
 
 // Route::get('/posts/{post}', [PostsController::class, 'show']);
 
+// Route to welcome page
 Route::get('/', function () {
     return view('welcome');
+});
+
+// Route to retrive all posts
+Route::get('/posts', function () {
+    return view('post');
 });
