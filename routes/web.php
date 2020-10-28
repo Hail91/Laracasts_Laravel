@@ -44,9 +44,7 @@ and return it to the UI like below. */
 
 // ** Rewrite above route to utilize a controller instead **
 
-Route::get('/posts/{post}', [PostsController::class, 'show']);
-
-/* Default welcome Route */
+// Route::get('/posts/{post}', [PostsController::class, 'show']);
 
 Route::get('/', function () {
     return view('welcome');
