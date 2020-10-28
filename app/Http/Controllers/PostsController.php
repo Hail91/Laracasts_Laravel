@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Posts;
 use Illuminate\Http\Request;
 
 class PostsController extends Controller
@@ -10,6 +11,6 @@ class PostsController extends Controller
 
     // Show all posts
     public function show() {
-        return view('post');
+        return view('post', ['posts' => Posts::all()]);
     }
 }

@@ -9,6 +9,12 @@
         <link rel="stylesheet" href="public/css/main/posts.css">
     </head>
     <body>     
-        <h1>Here is where you posts will live.</h1>
+        @foreach ($posts as $post)
+            <div>
+                <h1>Title: {{ $post->name }}</h1>
+                <h2>Description: {{ $post->description }}</h2>
+                <p>Body: {{ $post->body }}</p>
+            </div>
+        @endforeach
     </body>
 </html>

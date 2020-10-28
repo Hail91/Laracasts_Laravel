@@ -51,5 +51,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route to retrive all posts
+// ** POSTS ROUTES **
+// Route to retrieve all posts
 Route::get('/posts', [PostsController::class, 'show']);
