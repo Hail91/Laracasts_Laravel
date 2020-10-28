@@ -52,6 +52,4 @@ Route::get('/', function () {
 });
 
 // Route to retrive all posts
-Route::get('/posts', function () {
-    return view('post');
-});
+Route::get('/posts', [PostsController::class, 'show']);
