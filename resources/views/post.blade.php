@@ -13,7 +13,7 @@
         <h1 class="all-posts-title">View all posts</h1>
         <div class="posts-container">     
             @foreach ($posts as $post)
-            <div>
+            <div class="single-post-container">
                 <h1>Title: {{ $post->name }}</h1>
                 <h2>Description: {{ $post->description }}</h2>
                 <p>Body: {{ $post->body }}</p>

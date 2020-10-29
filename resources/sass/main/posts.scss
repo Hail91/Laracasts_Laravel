@@ -10,11 +10,16 @@
 }
 
 .all-posts-title {
-    color: red;
+    color: slategray;
     align-self: center;
 }
 
 .posts-container {
     display: flex;
     justify-content: center;
+
+    .single-post-container {
+        border: 1px solid black;
+        width: 15%;
+    }
 }
