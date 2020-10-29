@@ -13,4 +13,8 @@ class PostsController extends Controller
     public function show() {
         return view('post', ['posts' => Posts::all()]);
     }
+    // Create a post 
+    public function create() {
+        return view('addPost');
+    }
 }

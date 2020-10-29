@@ -13,6 +13,26 @@
         <h1 class="add-posts-title">Add a post!</h1>
         <div class="add-post-container">     
             <!-- Form can live here -->
+            <form action="">
+                <div>
+                    <label for="title">Title</label>
+                    <div>
+                        <input type="text" name="title" id="title">
+                    </div>
+                </div>
+                <div>
+                    <label for="description">Description</label>
+                    <div>
+                        <textarea name="description" id="description"></textarea>
+                    </div>
+                </div>
+                <div>
+                    <label for="body">Description</label>
+                    <div>
+                        <textarea name="body" id="body"></textarea>
+                    </div>
+                </div>
+            </form>
         </div>
     </div>
 </body>

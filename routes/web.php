@@ -54,3 +54,4 @@ Route::get('/', function () {
 // ** POSTS ROUTES **
 // Route to retrieve all posts
 Route::get('/posts', [PostsController::class, 'show']);
+Route::get('/posts/create', [PostsController::class, 'create']);
