@@ -18,3 +18,4 @@ mix.js("resources/js/app.js", "public/js").postCss(
 );
 mix.sass("resources/sass/app.scss", "public/css");
 mix.sass("resources/sass/main/posts.scss", "public/css/main");
+mix.sass("resources/sass/main/add_posts.scss", "public/css/main");
