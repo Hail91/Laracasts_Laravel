@@ -20,7 +20,11 @@
                 <p>Body: {{ $post->body }}</p>
                 <div class="post-actions-btns">
                     <a href="/posts/{{ $post->id }}/edit"><button>Update Post</button></a>
-                    <a><button>Delete Post</button></a>
+                    <form action="/posts/{{ $post->id }}/delete" method="POST">
+                        @method('DELETE')
+                        @csrf
+                        <a><button type="submit">Delete Post</button></a>
+                    </form>
                 </div>
             </div>
             @endforeach

@@ -29,7 +29,12 @@
   padding: 0px 20px 20px 20px;
 }
 
+.posts-container .single-post-container .post-actions-btns {
+  display: flex;
+}
+
 .posts-container .single-post-container .post-actions-btns button {
   cursor: pointer;
+  margin-right: 10px;
 }
 

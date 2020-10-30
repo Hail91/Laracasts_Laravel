@@ -13,7 +13,8 @@
         <h1 class="add-posts-title">Update post</h1>
         <div class="add-post-container">     
             <!-- Form can live here -->
-            <form method="POST" action="/posts">
+            <form method="POST" action="/posts/{{ $post->id }}/update">
+                @method('PUT')
                 @csrf
                 <div class="input-container">
                     <label class="add-post-label" for="name">Name</label>

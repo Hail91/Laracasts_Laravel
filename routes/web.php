@@ -56,5 +56,11 @@ Route::get('/', function () {
 Route::get('/posts', [PostsController::class, 'show']);
 // Route to add post form
 Route::post('/posts', [PostsController::class, 'store']);
+// Get view to add a post
 Route::get('/posts/create', [PostsController::class, 'create']);
+// Get view to edit a post
 Route::get('/posts/{post}/edit', [PostsController::class, 'edit']);
+// Edit a post
+Route::put('/posts/{post}/update', [PostsController::class, 'update']);
+// Delete a post
+Route::delete('/posts/{post}/delete', [PostsController::class, 'destroy']);
