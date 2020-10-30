@@ -54,4 +54,6 @@ Route::get('/', function () {
 // ** POSTS ROUTES **
 // Route to retrieve all posts
 Route::get('/posts', [PostsController::class, 'show']);
+// Route to add post form
+Route::post('/posts', [PostsController::class, 'store']);
 Route::get('/posts/create', [PostsController::class, 'create']);

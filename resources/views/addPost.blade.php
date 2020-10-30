@@ -13,24 +13,37 @@
         <h1 class="add-posts-title">Add a post!</h1>
         <div class="add-post-container">     
             <!-- Form can live here -->
-            <form action="">
+            <form method="POST" action="/posts">
+                @csrf
                 <div>
-                    <label for="title">Title</label>
+                    <label for="name">Name</label>
                     <div>
-                        <input type="text" name="title" id="title">
+                        <input type="text" name="name" id="name">
+                        @if ($errors->has('name'))
+                            <p>{{ $errors->first('name') }}</p>
+                        @endif
                     </div>
                 </div>
                 <div>
                     <label for="description">Description</label>
                     <div>
                         <textarea name="description" id="description"></textarea>
+                        @if ($errors->has('description'))
+                            <p>{{ $errors->first('description') }}</p>
+                        @endif
                     </div>
                 </div>
                 <div>
-                    <label for="body">Description</label>
+                    <label for="body">Body</label>
                     <div>
                         <textarea name="body" id="body"></textarea>
+                        @if ($errors->has('body'))
+                            <p>{{ $errors->first('body') }}</p>
+                        @endif
                     </div>
+                </div>
+                <div>
+                    <button type="submit">Submit</button>
                 </div>
             </form>
         </div>
