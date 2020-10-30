@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+.add-post-form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Nunito", sans-serif;
+
+    .add-posts-title {
+        color: slategray;
+    }
+
+    .input-container {
+        margin-bottom: 8%;
+
+        .error-message {
+            color: red;
+        }
+
+        .post-name-input {
+            height: 20px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        .post-textarea {
+            width: 170px;
+            height: 100px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    .add-post-submit {
+        cursor: pointer;
+        height: 25px;
+        width: 175px;
+
+        &:hover {
+            border: 1px solid slategray;
+            border-radius: 2px;
+        }
+    }
+}

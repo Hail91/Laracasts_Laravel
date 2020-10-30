@@ -10,40 +10,40 @@
 </head>
 <body>
     <div class="add-post-form-container">
-        <h1 class="add-posts-title">Add a post!</h1>
+        <h1 class="add-posts-title">Add a post</h1>
         <div class="add-post-container">     
             <!-- Form can live here -->
             <form method="POST" action="/posts">
                 @csrf
-                <div>
-                    <label for="name">Name</label>
+                <div class="input-container">
+                    <label class="add-post-label" for="name">Name</label>
                     <div>
-                        <input type="text" name="name" id="name">
+                        <input class="post-name-input" type="text" name="name" id="name">
                         @if ($errors->has('name'))
-                            <p>{{ $errors->first('name') }}</p>
+                            <p class="error-message">{{ $errors->first('name') }}</p>
                         @endif
                     </div>
                 </div>
-                <div>
-                    <label for="description">Description</label>
+                <div class="input-container">
+                    <label class="add-post-label" for="description">Description</label>
                     <div>
-                        <textarea name="description" id="description"></textarea>
+                        <textarea class="post-textarea" name="description" id="description"></textarea>
                         @if ($errors->has('description'))
-                            <p>{{ $errors->first('description') }}</p>
+                            <p class="error-message">{{ $errors->first('description') }}</p>
                         @endif
                     </div>
                 </div>
-                <div>
-                    <label for="body">Body</label>
+                <div class="input-container">
+                    <label class="add-post-label" for="body">Body</label>
                     <div>
-                        <textarea name="body" id="body"></textarea>
+                        <textarea class="post-textarea" name="body" id="body"></textarea>
                         @if ($errors->has('body'))
-                            <p>{{ $errors->first('body') }}</p>
+                            <p class="error-message">{{ $errors->first('body') }}</p>
                         @endif
                     </div>
                 </div>
                 <div>
-                    <button type="submit">Submit</button>
+                    <button class="add-post-submit" type="submit">Submit</button>
                 </div>
             </form>
         </div>

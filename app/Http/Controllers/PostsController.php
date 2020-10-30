@@ -20,7 +20,7 @@ class PostsController extends Controller
     // Store created post in the database and redirect to view all posts
     public function store() {
         request()->validate([
-            'name' => ['required'],
+            'name' => ['required', 'min:3'],
             'description' => ['required', 'max:255'],
             'body' => ['required', 'max:255'],
         ]);

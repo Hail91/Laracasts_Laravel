@@ -1,0 +1,47 @@
+@import url(https://fonts.googleapis.com/css2?family=Nunito&display=swap);.add-post-form-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Nunito", sans-serif;
+}
+
+.add-post-form-container .add-posts-title {
+  color: slategray;
+}
+
+.add-post-form-container .input-container {
+  margin-bottom: 8%;
+}
+
+.add-post-form-container .input-container .error-message {
+  color: red;
+}
+
+.add-post-form-container .input-container .post-name-input {
+  height: 20px;
+}
+
+.add-post-form-container .input-container .post-name-input:focus {
+  outline: none;
+}
+
+.add-post-form-container .input-container .post-textarea {
+  width: 170px;
+  height: 100px;
+}
+
+.add-post-form-container .input-container .post-textarea:focus {
+  outline: none;
+}
+
+.add-post-form-container .add-post-submit {
+  cursor: pointer;
+  height: 25px;
+  width: 175px;
+}
+
+.add-post-form-container .add-post-submit:hover {
+  border: 1px solid slategray;
+  border-radius: 2px;
+}
+

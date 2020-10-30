@@ -7,6 +7,11 @@
     justify-content: center;
     flex-direction: column;
     font-family: "Nunito", sans-serif;
+
+    .create-post-btn {
+        align-self: center;
+        margin-bottom: 1%;
+    }
 }
 
 .all-posts-title {
@@ -17,9 +22,17 @@
 .posts-container {
     display: flex;
     justify-content: center;
+    justify-content: space-evenly;
 
     .single-post-container {
         border: 1px solid black;
         width: 15%;
+        padding: 0px 20px 20px 20px;
+
+        .post-actions-btns {
+            button {
+                cursor: pointer;
+            }
+        }
     }
 }
