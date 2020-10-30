@@ -34,4 +34,10 @@ class PostsController extends Controller
         $post->save();
         return redirect("/posts");
     }
+    // Take user to edit post view
+    public function edit($id) {
+        // Need to grab the article associated with the passed ID.
+        $post = Posts::find($id);
+        return view('editPost', ['post' => $post]);
+    }
 }

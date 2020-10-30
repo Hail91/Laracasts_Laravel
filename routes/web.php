@@ -57,3 +57,4 @@ Route::get('/posts', [PostsController::class, 'show']);
 // Route to add post form
 Route::post('/posts', [PostsController::class, 'store']);
 Route::get('/posts/create', [PostsController::class, 'create']);
+Route::get('/posts/{post}/edit', [PostsController::class, 'edit']);

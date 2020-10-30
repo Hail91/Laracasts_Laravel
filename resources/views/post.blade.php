@@ -19,7 +19,7 @@
                 <h2>Description: {{ $post->description }}</h2>
                 <p>Body: {{ $post->body }}</p>
                 <div class="post-actions-btns">
-                    <a><button>Update Post</button></a>
+                    <a href="/posts/{{ $post->id }}/edit"><button>Update Post</button></a>
                     <a><button>Delete Post</button></a>
                 </div>
             </div>
